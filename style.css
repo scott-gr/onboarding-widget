@@ -1,0 +1,182 @@
+/* global values */
+:root {
+  font-family: 'Roboto', sans-serif;
+  --color-blue: #4657b8;
+  --color-white: #ffffff;
+  --color-orange: #fcaf0a;
+  --color-grey: #8e8e8e;
+  --color-black: #2d2d2d;
+
+  /* scaling size values */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+}
+* {
+  box-sizing: border-box;
+}
+/* top level parent container */
+.widgetContainer {
+  padding: 0.5rem 0.5rem var(--s0);
+
+  color: var(--color-black);
+  background-color: var(--color-blue);
+  box-sizing: content-box;
+}
+
+/* scrolling group of task cards */
+@media screen and (min-width: 430px) {
+  .taskGroup {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: #fff #000;
+  }
+  .taskGroup > * {
+    flex: 0 0 auto;
+  }
+
+  .taskGroup > * + * {
+    margin-left: 1rem;
+  }
+
+  /* scrollbar styling. Will be changed and replaced with dots? */
+  .taskGroup::-webkit-scrollbar {
+    height: 1rem;
+  }
+  .taskGroup::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  .taskGroup::-webkit-scrollbar-thumb {
+    background-color: #000;
+    background-image: linear-gradient(
+      #000 0,
+      #000 0.25rem,
+      #fff 0.25rem,
+      #fff 0.75rem,
+      #000 0.75rem
+    );
+  }
+}
+/* card container, contains icon and cardcontent */
+.taskCard {
+  padding: var(--s0);
+  border: var(--border-thin) solid;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 7.5px;
+  width: 12rem;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cardContent > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cardContent > * + * {
+  margin-top: var(--space, 1.5rem);
+}
+
+/* div 'row' containing the icon, keeps it to the right and pushes into margin */
+.with-icon {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: -0.75rem -0.75rem 0.5rem 0;
+  padding: 0;
+}
+.expand-icon {
+  height: var(--s1);
+  width: var(--s1);
+  stroke: var(--color-blue);
+  fill: var(--color-blue);
+  padding: 1px;
+  /* background-color: var(--color-blue); */
+  border-radius: 25%;
+}
+
+.titlebar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+  padding-inline: var(--s0);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.title {
+  justify-self: center;
+  text-align: center;
+}
+
+/* 'frame' for images or icons on card. Keeps 9:16 ratio */
+.thumbnail {
+  --n: 9;
+  --d: 16;
+  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  position: relative;
+  background-color: var(--color-grey);
+}
+
+.thumbnail > * {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*
+ * ─── NARROW WIDGET STYLES, CARDS SCROLL ON Y AXIS ────────────────────────────────
+ */
+@media screen and (max-width: 425px) {
+  .taskGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #fff #000;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: content-box;
+    place-items: center;
+  }
+  .taskGroup > * + * {
+    margin-top: var(--s0);
+    margin-left: 0;
+  }
+  .taskCard {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
