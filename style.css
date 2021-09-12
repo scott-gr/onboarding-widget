@@ -34,41 +34,51 @@
 }
 
 /* scrolling group of task cards */
-@media screen and (min-width: 430px) {
-  .taskGroup {
-    display: flex;
-    flex-wrap: nowrap;
-    height: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color: #fff #000;
-  }
-  .taskGroup > * {
-    flex: 0 0 auto;
-  }
-
-  .taskGroup > * + * {
-    margin-left: 1rem;
-  }
-
-  /* scrollbar styling. Will be changed and replaced with dots? */
-  .taskGroup::-webkit-scrollbar {
-    height: 1rem;
-  }
-  .taskGroup::-webkit-scrollbar-track {
-    background-color: #000;
-  }
-  .taskGroup::-webkit-scrollbar-thumb {
-    background-color: #000;
-    background-image: linear-gradient(
-      #000 0,
-      #000 0.25rem,
-      #fff 0.25rem,
-      #fff 0.75rem,
-      #000 0.75rem
-    );
-  }
+.taskGroup {
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: var(--s-1);
+  scrollbar-color: #fff #000;
 }
+.taskGroup > * {
+  flex: 0 0 auto;
+}
+
+.taskGroup > * + * {
+  margin-left: 1rem;
+}
+
+/* scrollbar styling. Will be changed and replaced with dots? */
+.taskGroup::-webkit-scrollbar {
+  height: 1rem;
+}
+.taskGroup::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.taskGroup::-webkit-scrollbar-thumb {
+  background-color: #000;
+  background-image: linear-gradient(
+    #000 0,
+    #000 0.25rem,
+    #fff 0.25rem,
+    #fff 0.75rem,
+    #000 0.75rem
+  );
+}
+
+.taskGroup::after {
+  content: 'End of tasks';
+  align-self: center;
+  padding: var(--s0);
+  text-align: center;
+  color: var(--color-white);
+  font-style: italic;
+  font-size: var(--s-1);
+}
+
 /* card container, contains icon and cardcontent */
 .taskCard {
   padding: var(--s0);
@@ -78,6 +88,15 @@
   border: 2px solid var(--color-black);
   border-radius: 7.5px;
   width: 12rem;
+  transition: border .125s, transform .125s;
+  transition-timing-function: ease-out;
+}
+
+.taskCard:hover {
+  border: 2px solid var(--color-orange); 
+  transform: scale(1.02) translateY(-2px);
+  cursor: pointer;
+
 }
 
 .cardContent {
