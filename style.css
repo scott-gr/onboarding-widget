@@ -1,3 +1,385 @@
+  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*
+ * ─── CUSTOM CSS ─────────────────────────────────────────────────────────────────
+ */
+
 /* global values */
 :root {
   font-family: 'Roboto', sans-serif;
@@ -8,7 +390,7 @@
   --color-black: #2d2d2d;
 
   /* scaling size values */
-  --ratio: 1.5;
+  --ratio: 1.25;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -21,76 +403,171 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 }
+
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-/* top level parent container */
-.widgetContainer {
-  padding: 0.5rem 0.5rem var(--s0);
 
+/* top level parent container */
+.widget-container {
+  padding: var(--s-5);
   color: var(--color-black);
-  background-color: var(--color-blue);
+  background: rgb(39, 46, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(39, 46, 130, 1) 0%,
+    rgba(70, 87, 184, 1) 100%
+  );
   box-sizing: content-box;
 }
 
 /* scrolling group of task cards */
-@media screen and (min-width: 430px) {
-  .taskGroup {
-    display: flex;
-    flex-wrap: nowrap;
-    height: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color: #fff #000;
-  }
-  .taskGroup > * {
-    flex: 0 0 auto;
-  }
-
-  .taskGroup > * + * {
-    margin-left: 1rem;
-  }
-
-  /* scrollbar styling. Will be changed and replaced with dots? */
-  .taskGroup::-webkit-scrollbar {
-    height: 1rem;
-  }
-  .taskGroup::-webkit-scrollbar-track {
-    background-color: #000;
-  }
-  .taskGroup::-webkit-scrollbar-thumb {
-    background-color: #000;
-    background-image: linear-gradient(
-      #000 0,
-      #000 0.25rem,
-      #fff 0.25rem,
-      #fff 0.75rem,
-      #000 0.75rem
-    );
-  }
+.task-group {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 24rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: var(--s-1);
+  scrollbar-color: #fff #000;
+  scroll-snap-type: x mandatory;
+  scroll-padding: var(--s2);
 }
-/* card container, contains icon and cardcontent */
-.taskCard {
+
+.task-group > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* margin between two cards */
+.task-group > * + * {
+  margin-left: 1rem;
+}
+
+/* scrollbar styling. */
+.task-group::-webkit-scrollbar {
+  display: none;
+  height: 1rem;
+}
+
+/* text to indicate the end of the task cards */
+.task-group::after {
+  content: 'End of Tasks';
+  align-self: center;
+  padding: var(--s0);
+  text-align: center;
+  color: var(--color-white);
+  font-style: italic;
+  font-size: var(--s-1);
+}
+
+/* card container, contains icon and card-content */
+.task-card {
   padding: var(--s0);
   border: var(--border-thin) solid;
   color: var(--color-black);
   background-color: var(--color-white);
-  border: 2px solid var(--color-black);
-  border-radius: 7.5px;
-  width: 12rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 0 0 1px rgb(0 0 0 / 10%);
+  width: 14rem;
+  max-height: min-content;
+  transition: transform 0.125s, width 0.125s;
 }
 
-.cardContent {
+.task-card:hover {
+  transform: translateY(-10px);
+}
+
+.task-card:focus {
+  /* card stretches to fill half the widget, while in horizontal orientation: ; */
+  min-width: 50%;
+  max-width: 100%;
+  width: 28rem;
+  max-height: initial;
+  padding-bottom: 0;
+  outline: none;
+}
+
+.task-card[complete=true]{
+  background-color: #fcaf0a;
+}
+
+/* flexbox of content in card. Single column */
+.card-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  height: 100%;
+  align-items: stretch;
+  margin-top: 0;
+  padding-top: 0;
 }
-.cardContent > * {
+
+.card-content > * {
   margin-top: 0;
   margin-bottom: 0;
 }
-.cardContent > * + * {
-  margin-top: var(--space, 1.5rem);
+
+.card-content > * + * {
+  margin-top: var(--s-2);
+}
+
+/* when card is clicked, task title moves up to top half with image */
+.task-card:focus .card-content {
+  width: 100%;
+  justify-items: center;
+}
+
+/* Can use these styles for additional buttons, just change color */
+.card-content .start-btn {
+  border: none;
+  color: var(--color-white);
+  font-weight: bold;
+  border-radius: 3px;
+  height: var(--s3);
+  width: 80%;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--s-5);
+  align-self: flex-end;
+  background: rgb(252, 183, 34);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 183, 34, 1) 0%,
+    rgba(226, 146, 9, 1) 75%,
+    rgba(201, 140, 8, 1) 100%
+  );
+}
+
+/* button grows with expanded card */
+.task-card:focus .card-content .start-btn {
+  height: var(--s4);
+}
+
+/* change the look of line with border-top */
+hr {
+  border-top: 2px dashed var(--color-blue);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-title {
+  text-align: center;
+  place-self: center;
+  padding-top: var(--s-5);
+  margin-block-start: 0;
+  width: inherit;
+  margin-block-end: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-wrap: break-word;
+    
+
 }
 
 /* div 'row' containing the icon, keeps it to the right and pushes into margin */
@@ -98,43 +575,116 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  margin: -0.75rem -0.75rem 0.5rem 0;
+  margin: -0.75rem -0.75rem 0 0;
   padding: 0;
 }
+
 .expand-icon {
   height: var(--s1);
   width: var(--s1);
   stroke: var(--color-blue);
   fill: var(--color-blue);
   padding: 1px;
-  /* background-color: var(--color-blue); */
   border-radius: 25%;
+  background-color: var(--color-white);
+  pointer-events: inherit;
 }
 
-.titlebar {
+.description {
+  font-size: var(--s-1);
+  overflow-wrap: break-word;
+  margin-top: var(--s-4);
+  overflow: hidden;
+       text-overflow: ellipsis;
+
+}
+
+/* top of widget */
+.title-bar {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   list-style-type: none;
-  padding-inline: var(--s0);
+  padding: var(--s0);
   margin-block-start: 0;
   margin-block-end: 0;
+  height: var(--s2);
+  color: var(--color-white);
+}
+
+.counter {
+  background: rgb(252, 183, 34);
+  background: radial-gradient(
+    circle,
+    rgba(252, 183, 34, 1) 0%,
+    rgba(226, 146, 9, 1) 75%,
+    rgba(201, 140, 8, 1) 100%
+  );
+  border-radius: 100%;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 0 0 1px rgb(0 0 0 / 10%);
+  height: 4rem;
+  width: 4rem;
+  overflow: visible;
+  display: flex;
+  z-index: 5;
+  text-align: center;
+  justify-content: right;
+  margin-left: -0.75rem;
+  padding: var(--s-4);
+}
+#countline {
+  stroke: var(--color-white);
+  stroke-width: 3px;
+  height: var(--s4);
+  width: var(--s4);
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  margin-right: -.75rem;
+  margin-left: -.5rem;
+}
+
+#total {
+  color: var(--color-white);
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-right: .1rem;
+}
+
+#done-count {
+  color: var(--color-white);
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-left: .2rem;
+  padding: 0;
 }
 
 .title {
   justify-self: center;
   text-align: center;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-/* 'frame' for images or icons on card. Keeps 9:16 ratio */
+/* 'frame' for images or icons on card. Keeps 2:3 ratio */
+
 .thumbnail {
-  --n: 9;
-  --d: 16;
-  padding-bottom: calc(var(--n) / var(--d) * 100%);
-  position: relative;
+  --n: 2;
+  --d: 3;
+  padding-bottom: 8rem;
   background-color: var(--color-grey);
+  position: relative;
+  width: 12rem;
+}
+
+.task-card:focus > * > .thumbnail {
+  width: 10rem;
+  padding-bottom: 8rem;
 }
 
 .thumbnail > * {
@@ -155,28 +705,254 @@
   object-fit: cover;
 }
 
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: center;
+}
+
+.task-detail {
+  font-size: var(--s-2);
+  padding: 0;
+  margin-bottom: 0;
+  color: var(--color-blue);
+}
+
+.switcher > .thumbnail {
+  flex-basis:  auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.switcher > span {
+  flex-basis: 6rem;
+  flex-shrink: 2;
+  flex-grow: 1;
+}
+
+.task-card:focus > * > .switcher {
+  justify-content: space-evenly;
+}
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: var(--s5);
+    height: var(--s5);
+    border: none;
+    background-color: transparent;
+    color: var(--color-orange);
+    border-radius: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  #next {
+    right: 0;
+  }
+
+  .arrow {
+    stroke: none;
+    fill: var(--color-orange);
+    opacity: 0.7;
+  }
+
+  /* On hover, add a black border color  */
+  .arrow:hover {
+    /* stroke: var(--color-black);
+    stroke-width: 2px; */
+    opacity: 1;
+  }
+/*
+ * ─── BOTTOM NAV AREA ────────────────────────────────────────────────────────────
+ */
+
+@media screen and (min-width: 426px) {
+  .task-group {
+    margin-left: 1rem;
+  }
+
+  .nav-dots {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: var(--space, 1rem);
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-block-start: var(--s-3);
+    margin-block-end: var(--s-1);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+  }
+
+  .nav-dots .dot {
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 100%;
+    width: var(--s2);
+    height: var(--s2);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .counter {
+    margin-top: var(--s3);
+  }
+
+  .nav-dots .active {
+    border: 2px solid var(--color-orange);
+  }
+
+  .nav-dots .inactive {
+    border: none;
+  }
+
+
+}
+
 /*
  * ─── NARROW WIDGET STYLES, CARDS SCROLL ON Y AXIS ────────────────────────────────
  */
 @media screen and (max-width: 425px) {
-  .taskGroup {
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    stroke: none;
+    fill: var(--color-orange);
+    opacity: 0.7;
+    width: var(--s5);
+    height: var(--s5);
+    border: none;
+    background-color: transparent;
+    color: var(--color-orange);
+    border-radius: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  #next {
+    right: 0;
+    transform: rotate(90deg);
+
+  }
+
+  #prev {
+    transform: rotate(90deg);
+  }
+
+  
+
+  .task-group {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    min-height: 26rem;
+    max-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-color: #fff #000;
     margin-right: auto;
     margin-left: auto;
     box-sizing: content-box;
     place-items: center;
+    scroll-snap-type: y proximity;
+    scroll-padding: var(--s2);
   }
-  .taskGroup > * + * {
+
+  .task-group > * + * {
     margin-top: var(--s0);
     margin-left: 0;
   }
-  .taskCard {
+
+  .task-group:first-child {
+    margin-top: var(--s4);
+  }
+
+  .task-card {
     width: 100%;
     max-width: 20rem;
+    height: 24rem;
+    scroll-snap-align: start;
+    transition: border 0.125s;
+  }
+
+  .thumbnail {
+    padding-bottom: calc(var(--n) / var(--d) * 100%);
+    width: 100%;
+    max-height: 30%;
+  }
+
+  .task-card:focus > * > * > .thumbnail {
+    max-width: 9rem;
+    width: 9rem;
+    padding-bottom: 6rem;
+  }
+
+  .task-card:hover {
+    transform: translateY(0);
+    box-shadow: 3px 3px var(--color-orange);
+  }
+
+  .task-card:focus {
+    width: 100%;
+    max-height: initial;
+  }
+
+  .title-bar {
+    overflow: visible;
+    top: 0;
+    padding: var(--s-1);
+    width: 100%;
+    height: var(--s3);
+    position: sticky;
+    z-index: 3;
+    background-color: #272e82;
+    padding-inline-start: 0;
+  }
+
+  .counter {
+    margin-top: var(--s2);
+    margin-left: 0;
+  }
+
+  .nav-dots {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: var(--space, 1rem);
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-block-start: var(--s-3);
+    margin-block-end: var(--s-1);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+  }
+
+  .nav-dots .dot {
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 100%;
+    width: var(--s2);
+    height: var(--s2);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nav-dots .active {
+    border: 2px solid var(--color-orange);
+  }
+
+  .nav-dots .inactive {
+    border: none;
   }
 }
